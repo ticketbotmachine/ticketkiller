@@ -655,9 +655,34 @@
     <div class="max-w-3xl mx-auto">
       <div class="timeline-item reveal">
         <div class="flex flex-wrap items-center gap-2">
+          <span class="version-tag">v1.41.0</span>
+          <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-10-05</span>
+          <span class="tag-pill tag-new">最新</span>
+        </div>
+        <h4 class="text-white/95 font-bold mt-3">場次資料全面更新 · 根據香港01最新售票資訊</h4>
+        <ul class="text-blush/80 text-sm mt-3 space-y-2">
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入 PER SE（Cityline，9月29日優先 / 9月30日公售）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入 fromis_9（Klook，10月6日公售）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入鈴木このみ（KKTIX，7月22日公售）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入 TOGENASHI TOGEARI（Cityline，8月11日公售）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入 Serrini（KKTIX，9月24日公售）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入 PENTAGON（KKTIX，9月18日公售）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入 Joji（Cityline，4月30日公售）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入優里 Yuuri（KKTIX，8月7日公售）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入鄭允浩 U-KNOW（KKTIX，已公售）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>加入 MAMAMOO（已開售）</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>NCT 127 公售日期修正為 8月27日中午12:00</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>許志安公售日期確認為 7月24日</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>MIRROR 公售日期確認為 10月8日（Klook）</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>劉德華 URBTIX 抽籤登記已結束，等待中籤結果</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>SF9 公售日期 10月13日中午12:00（KKTIX）</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="flex flex-wrap items-center gap-2">
           <span class="version-tag">v1.40.0</span>
           <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-30</span>
-          <span class="tag-pill tag-new">最新</span>
         </div>
         <h4 class="text-white/95 font-bold mt-3">場次資料全面更新 · 六大平台最新 12 場</h4>
         <ul class="text-blush/80 text-sm mt-3 space-y-2">
@@ -951,7 +976,7 @@
     apiKey: '',
     timeout: 8000,
     cacheTTL: 24 * 60 * 60 * 1000,
-    cacheKey: 'tk_shows_cache_v6',   /* ← 已從 v5 升級為 v6，避免讀到舊版快取 */
+    cacheKey: 'tk_shows_cache_v7',   /* ← 已從 v6 升級為 v7，避免讀到舊版快取 */
     debug: false,                    /* ← 需要診斷時臨時改為 true */
     autoDetectEnv: false,
 
@@ -1285,7 +1310,7 @@
   var CORS_PROXY  = CFG.corsProxy  != null ? CFG.corsProxy  : '';
   var API_KEY     = CFG.apiKey     != null ? CFG.apiKey     : '';
   var TIMEOUT     = CFG.timeout    != null ? CFG.timeout    : 8000;
-  var CACHE_KEY   = CFG.cacheKey   != null ? CFG.cacheKey   : 'tk_shows_cache_v6';
+  var CACHE_KEY   = CFG.cacheKey   != null ? CFG.cacheKey   : 'tk_shows_cache_v7';
   var CACHE_TTL   = CFG.cacheTTL   != null ? CFG.cacheTTL   : 24 * 60 * 60 * 1000;
   var DEBUG       = !!CFG.debug;
 
@@ -1318,7 +1343,7 @@
   var API_ENDPOINT = buildApiUrl();
   log('API_ENDPOINT =', API_ENDPOINT);
 
-  // ============ 兜底資料（最新 12 場六大平台場次）============
+  // ============ 兜底資料（根據香港01最新售票資訊更新）============
   var FALLBACK_SHOWS = [
     {
       id: 'andy-hui-2026',
@@ -1326,124 +1351,181 @@
       date: '2026年10月8日 – 10日（共3場）',
       venue: '紅磡香港體育館（紅館）',
       price: 'HK$1,280 / $780 / $580',
-      publicSaleDate: '',
-      publicSaleTime: '',
-      platform: 'URBTIX、Klook',
-      ticketUrl: 'https://www.urbtix.hk/',
-      isMacau: false,
-      isHot: true,
-      prioritySales: [
-        { stage: 'Klook 獨家優先訂票', date: '2026-07-15', time: '上午 10:00 起' },
-        { stage: 'URBTIX 公開發售', date: '2026-07-24', time: '上午 10:00 起' }
-      ],
-      icon: 'fa-star',
-      iconColor: 'purple'
-    },
-    {
-      id: 'lucy-2026',
-      name: '2026 LUCY 9TH CONCERT〈ISLAND〉ENCORE IN HONG KONG',
-      date: '2026年11月3日（星期二）',
-      venue: '東蒲胡李名靜體育館',
-      price: 'HK$1,399 (VIP) / $999 (企位) / $799 (坐位)',
-      publicSaleDate: '2026-08-27',
-      publicSaleTime: '下午 3:00',
-      platform: 'Cityline',
-      ticketUrl: 'https://www.cityline.com/',
-      isMacau: false,
-      isHot: false,
-      prioritySales: [
-        { stage: '滙豐Mastercard優先訂票', date: '2026-08-25', time: '下午 3:00 – 晚上 11:59' },
-        { stage: 'Live Nation 會員優先購票', date: '2026-08-26', time: '下午 3:00 – 晚上 11:59' }
-      ],
-      icon: 'fa-music',
-      iconColor: 'magenta'
-    },
-    {
-      id: 'janice-2026',
-      name: '衛蘭 Janice《OUT OF FRAME》世界巡迴演唱會',
-      date: '2026年11月14日、15日、17日',
-      venue: '紅磡香港體育館（紅館）',
-      price: 'HK$1,180 / $880 / $580',
-      publicSaleDate: '2026-10-08',
+      publicSaleDate: '2026-07-24',
       publicSaleTime: '上午 10:00',
       platform: 'URBTIX、Klook',
       ticketUrl: 'https://www.urbtix.hk/',
       isMacau: false,
       isHot: true,
       prioritySales: [
-        { stage: '建行(亞洲)信用卡獨家優先購票', date: '2026-09-28', time: '中午 12:00 – 晚上 8:00' },
-        { stage: '所有建行(亞洲)信用卡優先購票', date: '2026-09-29', time: '中午 12:00 – 晚上 8:00' }
+        { stage: 'Klook 獨家優先訂票', date: '2026-07-15', time: '上午 10:00 起' }
       ],
-      icon: 'fa-globe',
+      icon: 'fa-star',
+      iconColor: 'purple'
+    },
+    {
+      id: 'per-se-2026',
+      name: 'PER SE「Ripples」音樂會 2026',
+      date: '2026年11月20日（五）晚上 8:00',
+      venue: 'TIDES',
+      price: 'VIP HK$980 / GA HK$680（全企位）',
+      publicSaleDate: '2026-09-30',
+      publicSaleTime: '下午 3:00',
+      platform: 'Cityline',
+      ticketUrl: 'https://www.cityline.com/',
+      isMacau: false,
+      isHot: true,
+      prioritySales: [
+        { stage: '滙豐Mastercard優先預售', date: '2026-09-29', time: '下午 3:00 – 晚上 11:59' }
+      ],
+      icon: 'fa-music',
+      iconColor: 'magenta'
+    },
+    {
+      id: 'fromis-9-2026',
+      name: 'fromis_9 2026 香港演唱會',
+      date: '2026年11月22日（日）晚上 6:00',
+      venue: 'AXA 安盛創夢館（AXA Dreamland）',
+      price: 'VIP HK$1,799 / Zone A HK$1,299 / Zone B HK$999',
+      publicSaleDate: '2026-10-06',
+      publicSaleTime: '中午 12:00',
+      platform: 'Klook',
+      ticketUrl: 'https://www.klook.com/',
+      isMacau: false,
+      isHot: true,
+      prioritySales: [],
+      icon: 'fa-trophy',
       iconColor: 'green'
     },
     {
-      id: 'sf9-2026',
-      name: 'SF9 LIVE FANTASY #6 十年逐夢 IN HONG KONG',
-      date: '2026年11月8日（星期日）',
-      venue: 'AXA 安盛創夢館 · 西沙 GO PARK',
-      price: 'HK$1,599 (VIP) / $1,199 (Zone A) / $799 (Zone B)',
-      publicSaleDate: '2026-10-13',
+      id: 'suzuki-konomi-2026',
+      name: '鈴木このみ Konomi Suzuki Asia Tour 2026 in Hong Kong',
+      date: '2026年10月10日（六）',
+      venue: 'PORTAL（新蒲崗）',
+      price: 'HK$980（VIP）/ HK$780',
+      publicSaleDate: '2026-07-22',
       publicSaleTime: '中午 12:00',
       platform: 'KKTIX',
       ticketUrl: 'https://kktix.com/',
       isMacau: false,
+      isHot: false,
+      prioritySales: [],
+      icon: 'fa-star',
+      iconColor: 'purple'
+    },
+    {
+      id: 'togenashi-togeari-2026',
+      name: 'TOGENASHI TOGEARI 香港演唱會 2026',
+      date: '2026年10月2日（五）',
+      venue: 'AsiaWorld-Summit（亞洲國際博覽館）',
+      price: '待公佈',
+      publicSaleDate: '2026-08-11',
+      publicSaleTime: '上午 10:00',
+      platform: 'Cityline',
+      ticketUrl: 'https://www.cityline.com/',
+      isMacau: false,
+      isHot: false,
+      prioritySales: [],
+      icon: 'fa-globe',
+      iconColor: 'green'
+    },
+    {
+      id: 'serrini-2026',
+      name: 'Serrini 2026 香港演唱會',
+      date: '2026年10月30日（五）',
+      venue: '麥花臣場館',
+      price: 'HK$1,080 / $880 / $720',
+      publicSaleDate: '2026-09-24',
+      publicSaleTime: '上午 11:00',
+      platform: 'KKTIX',
+      ticketUrl: 'https://kktix.com/',
+      isMacau: false,
       isHot: true,
+      prioritySales: [],
+      icon: 'fa-music',
+      iconColor: 'magenta'
+    },
+    {
+      id: 'pentagon-2026',
+      name: 'PENTAGON 2026 香港演唱會',
+      date: '2026年11月1日（日）',
+      venue: '麥花臣場館',
+      price: '待公佈',
+      publicSaleDate: '2026-09-18',
+      publicSaleTime: '上午 11:00',
+      platform: 'KKTIX',
+      ticketUrl: 'https://kktix.com/',
+      isMacau: false,
+      isHot: false,
       prioritySales: [],
       icon: 'fa-trophy',
       iconColor: 'purple'
     },
     {
-      id: 'yuki-kajiura-2026',
-      name: 'Yuki Kajiura LIVE vol.#22 ～precious pieces～ in Hong Kong',
-      date: '2026年11月15日（星期日）',
-      venue: '麥花臣場館',
-      price: 'HK$1,580 (VIP) / $1,380 / $1,180',
-      publicSaleDate: '2026-09-17',
+      id: 'joji-2026',
+      name: 'Joji 2026 香港演唱會',
+      date: '2026年11月29日（日）晚上 8:00',
+      venue: '亞洲國際博覽館 11 號展館',
+      price: '一般門票 HK$699 起 / VIP套票 HK$1,999 起（全企位）',
+      publicSaleDate: '2026-04-30',
       publicSaleTime: '中午 12:00',
-      platform: 'KKTIX',
-      ticketUrl: 'https://kktix.com/',
+      platform: 'Cityline',
+      ticketUrl: 'https://www.cityline.com/',
       isMacau: false,
       isHot: false,
-      prioritySales: [
-        { stage: 'VIP 抽選優先預約', date: '2026-09-08', time: '中午 12:00 – 9月10日' }
-      ],
-      icon: 'fa-star',
-      iconColor: 'magenta'
-    },
-    {
-      id: 'donghae-2026',
-      name: '2026 DONGHAE 1ST SOLO ENCORE CONCERT [ALIVE] in HONG KONG',
-      date: '2026年10月24日（星期六）',
-      venue: '亞洲國際博覽館 SUMMIT',
-      price: 'HK$1,799 / $1,399 / $999',
-      publicSaleDate: '2026-09-18',
-      publicSaleTime: '下午 2:00',
-      platform: 'HKTicketing、大麥、Trip.com',
-      ticketUrl: 'https://www.hkticketing.com/',
-      isMacau: false,
-      isHot: true,
       prioritySales: [],
       icon: 'fa-globe',
       iconColor: 'green'
     },
     {
-      id: 'gigi-2026',
-      name: '梁詠琪 LOVE GiGi 愛自己世界巡迴演唱會 – 香港站',
-      date: '2026年11月27日 – 29日（共3場）',
-      venue: '紅磡香港體育館（紅館）',
-      price: 'HK$1,180 / $780 / $480',
-      publicSaleDate: '2026-09-08',
-      publicSaleTime: '上午 10:00',
-      platform: 'URBTIX、Cityline',
-      ticketUrl: 'https://www.urbtix.hk/',
+      id: 'yuuri-2026',
+      name: '優里 Yuuri 2026 香港演唱會',
+      date: '2026年11月27日（五）',
+      venue: '亞洲國際博覽館 6、8 及 10 號展館',
+      price: '待公佈',
+      publicSaleDate: '2026-08-07',
+      publicSaleTime: '中午 12:00',
+      platform: 'KKTIX',
+      ticketUrl: 'https://kktix.com/',
+      isMacau: false,
+      isHot: false,
+      prioritySales: [],
+      icon: 'fa-star',
+      iconColor: 'magenta'
+    },
+    {
+      id: 'uknow-yunho-2026',
+      name: '鄭允浩 U-KNOW（東方神起）2026 香港見面會',
+      date: '2026年9月26日（六）晚上 7:00',
+      venue: 'AXA 安盛創夢館 · 西沙 GO PARK',
+      price: 'HK$1,799 / $1,399 / $999',
+      publicSaleDate: '2026-08-17',
+      publicSaleTime: '已公開發售',
+      platform: 'KKTIX、大麥、offgrid',
+      ticketUrl: 'https://kktix.com/',
+      isMacau: false,
+      isHot: false,
+      prioritySales: [],
+      icon: 'fa-trophy',
+      iconColor: 'purple'
+    },
+    {
+      id: 'mamamoo-2026',
+      name: 'MAMAMOO 2026 香港演唱會',
+      date: '2026年10月4日（日）',
+      venue: '啟德體藝館',
+      price: '待公佈',
+      publicSaleDate: '2026-07-30',
+      publicSaleTime: '已公開發售',
+      platform: 'Cityline、HKTicketing',
+      ticketUrl: 'https://www.cityline.com/',
       isMacau: false,
       isHot: true,
       prioritySales: [
-        { stage: 'Cityline 優先購票', date: '2026-09-04', time: '上午 10:00 起' }
+        { stage: '優先購票', date: '2026-07-28', time: '已結束' }
       ],
-      icon: 'fa-music',
-      iconColor: 'purple'
+      icon: 'fa-star',
+      iconColor: 'magenta'
     },
     {
       id: 'nct127-2026',
@@ -1451,14 +1533,14 @@
       date: '2026年10月10日 – 11日（共2場）',
       venue: '啟德體藝館',
       price: 'HK$2,199 (VIP企位) / $1,799 / $1,699 / $1,399 / $899',
-      publicSaleDate: '2026-09-20',
-      publicSaleTime: '上午 10:00',
+      publicSaleDate: '2026-08-27',
+      publicSaleTime: '中午 12:00',
       platform: 'Cityline、HKTicketing',
       ticketUrl: 'https://www.cityline.com/',
       isMacau: false,
       isHot: true,
       prioritySales: [
-        { stage: '粉絲會優先購票', date: '2026-09-15', time: '上午 10:00 起' }
+        { stage: '粉絲會優先購票', date: '2026-08-26', time: '上午 10:00 起' }
       ],
       icon: 'fa-trophy',
       iconColor: 'green'
@@ -1539,6 +1621,22 @@
       ],
       icon: 'fa-trophy',
       iconColor: 'magenta'
+    },
+    {
+      id: 'sf9-2026',
+      name: 'SF9 LIVE FANTASY #6 十年逐夢 IN HONG KONG',
+      date: '2026年11月8日（星期日）下午 5:00',
+      venue: 'AXA 安盛創夢館 · 西沙 GO PARK',
+      price: 'HK$1,599 (VIP) / $1,199 (Zone A) / $799 (Zone B)',
+      publicSaleDate: '2026-10-13',
+      publicSaleTime: '中午 12:00',
+      platform: 'KKTIX',
+      ticketUrl: 'https://kktix.com/',
+      isMacau: false,
+      isHot: true,
+      prioritySales: [],
+      icon: 'fa-trophy',
+      iconColor: 'purple'
     }
   ];
 
@@ -2144,6 +2242,7 @@
     btn.addEventListener('click', function () {
       try {
         localStorage.removeItem(CACHE_KEY);
+        localStorage.removeItem('tk_shows_cache_v6'); // 順便清掉舊版
         localStorage.removeItem('tk_shows_cache_v5'); // 順便清掉舊版
         localStorage.removeItem('tk_shows_cache_v4'); // 順便清掉舊版
       } catch (e) {}
