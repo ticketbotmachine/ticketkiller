@@ -653,11 +653,38 @@
     </div>
 
     <div class="max-w-3xl mx-auto">
+      <!-- v1.44.0 最新 -->
+      <div class="timeline-item reveal">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="version-tag">v1.44.0</span>
+          <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-10-16</span>
+          <span class="tag-pill tag-new">最新</span>
+        </div>
+        <h4 class="text-white/95 font-bold mt-3">場次資料全面更新 · 新增多場港澳演唱會及售票日期</h4>
+        <ul class="text-blush/80 text-sm mt-3 space-y-2">
+          <li><span class="tag-pill tag-new mr-2">新增</span>周殷廷 The Alchemist 香港站（8月28-29日，URBTIX）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>A-Lin 黃麗玲《歌跡 Journey》香港站（4月17-19日，KKTIX、URBTIX）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>陳曉東《NEON Reflections 30》香港站（6月19日，URBTIX）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>衛蘭《OUT OF FRAME》香港站（11月14-18日，URBTIX、Klook）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>梁詠琪《LOVE GiGi 愛自己》香港站（11月27-29日，URBTIX）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>梓渝「游點意思Pro」澳門站（11月13-15日，大麥、FANTOPIA、銀河票務）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>i-dle《Syncopation》澳門站（8月29-30日，銀河票務、FANTOPIA、大麥）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>周柏豪生日限定演唱會澳門站（11月7日，金光票務、Klook等）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>韋禮安巡迴演唱會澳門站（12月12日，貓眼、uutix等）</li>
+          <li><span class="tag-pill tag-new mr-2">新增</span>藝聲 YESUNG 澳門加場（11月14-15日，FANTOPIA、銀河票務、大麥）</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>MIRROR 香港站加場19日、23-24日，加場公售10月21日（Klook）</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>TXT 澳門站售票日期：優先9月21日14:00，公售9月24日12:00</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>衛蘭 香港站加場11月18日，公售10月20日，優先10月16日（Klook）</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>BOL4 香港站公售日期確認為10月20日下午1時（OFFGRID、大麥）</li>
+          <li><span class="tag-pill tag-opt mr-2">更新</span>移除已過公售日期場次（The Weeknd、陳粒、林憶蓮等）</li>
+        </ul>
+      </div>
+
+      <!-- v1.43.0 -->
       <div class="timeline-item reveal">
         <div class="flex flex-wrap items-center gap-2">
           <span class="version-tag">v1.43.0</span>
           <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-10-12</span>
-          <span class="tag-pill tag-new">最新</span>
         </div>
         <h4 class="text-white/95 font-bold mt-3">場次資料全面更新 · 港澳未開售演唱會</h4>
         <ul class="text-blush/80 text-sm mt-3 space-y-2">
@@ -680,6 +707,7 @@
         </ul>
       </div>
 
+      <!-- v1.42.0 -->
       <div class="timeline-item reveal">
         <div class="flex flex-wrap items-center gap-2">
           <span class="version-tag">v1.42.0</span>
@@ -698,6 +726,7 @@
         </ul>
       </div>
 
+      <!-- v1.41.0 -->
       <div class="timeline-item reveal">
         <div class="flex flex-wrap items-center gap-2">
           <span class="version-tag">v1.41.0</span>
@@ -723,80 +752,86 @@
         </ul>
       </div>
 
-      <div class="timeline-item reveal">
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="version-tag">v1.40.0</span>
-          <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-30</span>
-        </div>
-        <h4 class="text-white/95 font-bold mt-3">場次資料全面更新 · 六大平台最新 12 場</h4>
-        <ul class="text-blush/80 text-sm mt-3 space-y-2">
-          <li><span class="tag-pill tag-new mr-2">新增</span>更新為 12 場最新演唱會場次（許志安、LUCY、衛蘭、SF9、Yuki Kajiura、李東海、梁詠琪、NCT 127、MIRROR、劉德華、The Weeknd、Twins）</li>
-          <li><span class="tag-pill tag-fix mr-2">修復</span>解決更新 <code class="text-green">concerts.json</code> 後網頁不更新的問題</li>
-          <li><span class="tag-pill tag-new mr-2">新增</span>「⚡ 強制重載」按鈕，一鍵清除 localStorage + Cache Storage</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>Fetch 加上 <code class="text-green">no-store</code> + 時間戳，繞過 CDN 快取</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>JSON 支援 UTF-8 BOM 自動去除</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>錯誤訊息分類（404 / 超時 / JSON 格式 / CORS），直接顯示於 UI</li>
-          <li><span class="tag-pill tag-new mr-2">新增</span>支援 <code class="text-green">concerts.json</code> 加上 <code class="text-green">version</code> 欄位方便追蹤</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="version-tag">v1.39.0</span>
-          <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-30</span>
-        </div>
-        <h4 class="text-white/95 font-bold mt-3">場次資料載入修復 · 快取強制刷新</h4>
-        <ul class="text-blush/80 text-sm mt-3 space-y-2">
-          <li><span class="tag-pill tag-fix mr-2">修復</span>解決更新 <code class="text-green">concerts.json</code> 後網頁不更新的問題</li>
-          <li><span class="tag-pill tag-new mr-2">新增</span>「⚡ 強制重載」按鈕，一鍵清除 localStorage + Cache Storage</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>Fetch 加上 <code class="text-green">no-store</code> + 時間戳，繞過 CDN 快取</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>JSON 支援 UTF-8 BOM 自動去除</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>錯誤訊息分類（404 / 超時 / JSON 格式 / CORS），直接顯示於 UI</li>
-          <li><span class="tag-pill tag-new mr-2">新增</span>支援 <code class="text-green">concerts.json</code> 加上 <code class="text-green">version</code> 欄位方便追蹤</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="version-tag">v1.38.0</span>
-          <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-28</span>
-        </div>
-        <h4 class="text-white/95 font-bold mt-3">留言區只顯示近 3 天內開售場次</h4>
-        <ul class="text-blush/80 text-sm mt-3 space-y-2">
-          <li><span class="tag-pill tag-opt mr-2">優化</span>留言區只顯示 <span class="text-white font-bold">最近 3 天（今天 / 昨天 / 前天）</span> 內已開售場次的留言</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>舊場次留言自動隱藏，隨時間推移自動消失</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>留言排序改為最近日期優先</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>聯絡面板語言切換函式改為動態取值，避免載入順序問題</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="version-tag">v1.37.0</span>
-          <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-25</span>
-        </div>
-        <h4 class="text-white/95 font-bold mt-3">留言區只顯示已開售場次</h4>
-        <ul class="text-blush/80 text-sm mt-3 space-y-2">
-          <li><span class="tag-pill tag-opt mr-2">優化</span>留言區只為 <span class="text-white font-bold">已開始售票</span>（優先購票或公開發售已到時間）的場次生成留言</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>未開售場次的留言自動隱藏，隨時間推移到開售日會自動出現</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>判斷精確到分鐘，與場次卡片的「開賣中」狀態完全同步</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="version-tag">v1.36.0</span>
-          <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-25</span>
-        </div>
-        <h4 class="text-white/95 font-bold mt-3">Telegram Bot 直發 · 留言區後端 API</h4>
-        <ul class="text-blush/80 text-sm mt-3 space-y-2">
-          <li><span class="tag-pill tag-new mr-2">新增</span>聯絡表單可直接發送到 Telegram Bot（配置後啟用，失敗自動降級為複製）</li>
-          <li><span class="tag-pill tag-new mr-2">新增</span>留言區可接入後端 API，支援跨裝置同步留言與點讚</li>
-          <li><span class="tag-pill tag-opt mr-2">優化</span>提交按鈕加入 spinner 與禁用狀態，防止重複提交</li>
-        </ul>
-      </div>
-
       <div id="olderLogs" class="hidden">
+        <!-- v1.40.0 -->
+        <div class="timeline-item">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="version-tag">v1.40.0</span>
+            <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-30</span>
+          </div>
+          <h4 class="text-white/95 font-bold mt-3">場次資料全面更新 · 六大平台最新 12 場</h4>
+          <ul class="text-blush/80 text-sm mt-3 space-y-2">
+            <li><span class="tag-pill tag-new mr-2">新增</span>更新為 12 場最新演唱會場次（許志安、LUCY、衛蘭、SF9、Yuki Kajiura、李東海、梁詠琪、NCT 127、MIRROR、劉德華、The Weeknd、Twins）</li>
+            <li><span class="tag-pill tag-fix mr-2">修復</span>解決更新 <code class="text-green">concerts.json</code> 後網頁不更新的問題</li>
+            <li><span class="tag-pill tag-new mr-2">新增</span>「⚡ 強制重載」按鈕，一鍵清除 localStorage + Cache Storage</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>Fetch 加上 <code class="text-green">no-store</code> + 時間戳，繞過 CDN 快取</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>JSON 支援 UTF-8 BOM 自動去除</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>錯誤訊息分類（404 / 超時 / JSON 格式 / CORS），直接顯示於 UI</li>
+            <li><span class="tag-pill tag-new mr-2">新增</span>支援 <code class="text-green">concerts.json</code> 加上 <code class="text-green">version</code> 欄位方便追蹤</li>
+          </ul>
+        </div>
+
+        <!-- v1.39.0 -->
+        <div class="timeline-item">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="version-tag">v1.39.0</span>
+            <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-30</span>
+          </div>
+          <h4 class="text-white/95 font-bold mt-3">場次資料載入修復 · 快取強制刷新</h4>
+          <ul class="text-blush/80 text-sm mt-3 space-y-2">
+            <li><span class="tag-pill tag-fix mr-2">修復</span>解決更新 <code class="text-green">concerts.json</code> 後網頁不更新的問題</li>
+            <li><span class="tag-pill tag-new mr-2">新增</span>「⚡ 強制重載」按鈕，一鍵清除 localStorage + Cache Storage</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>Fetch 加上 <code class="text-green">no-store</code> + 時間戳，繞過 CDN 快取</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>JSON 支援 UTF-8 BOM 自動去除</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>錯誤訊息分類（404 / 超時 / JSON 格式 / CORS），直接顯示於 UI</li>
+            <li><span class="tag-pill tag-new mr-2">新增</span>支援 <code class="text-green">concerts.json</code> 加上 <code class="text-green">version</code> 欄位方便追蹤</li>
+          </ul>
+        </div>
+
+        <!-- v1.38.0 -->
+        <div class="timeline-item">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="version-tag">v1.38.0</span>
+            <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-28</span>
+          </div>
+          <h4 class="text-white/95 font-bold mt-3">留言區只顯示近 3 天內開售場次</h4>
+          <ul class="text-blush/80 text-sm mt-3 space-y-2">
+            <li><span class="tag-pill tag-opt mr-2">優化</span>留言區只顯示 <span class="text-white font-bold">最近 3 天（今天 / 昨天 / 前天）</span> 內已開售場次的留言</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>舊場次留言自動隱藏，隨時間推移自動消失</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>留言排序改為最近日期優先</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>聯絡面板語言切換函式改為動態取值，避免載入順序問題</li>
+          </ul>
+        </div>
+
+        <!-- v1.37.0 -->
+        <div class="timeline-item">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="version-tag">v1.37.0</span>
+            <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-25</span>
+          </div>
+          <h4 class="text-white/95 font-bold mt-3">留言區只顯示已開售場次</h4>
+          <ul class="text-blush/80 text-sm mt-3 space-y-2">
+            <li><span class="tag-pill tag-opt mr-2">優化</span>留言區只為 <span class="text-white font-bold">已開始售票</span>（優先購票或公開發售已到時間）的場次生成留言</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>未開售場次的留言自動隱藏，隨時間推移到開售日會自動出現</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>判斷精確到分鐘，與場次卡片的「開賣中」狀態完全同步</li>
+          </ul>
+        </div>
+
+        <!-- v1.36.0 -->
+        <div class="timeline-item">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="version-tag">v1.36.0</span>
+            <span class="text-blush/65 text-sm"><i class="fa fa-calendar-o mr-1"></i>2026-09-25</span>
+          </div>
+          <h4 class="text-white/95 font-bold mt-3">Telegram Bot 直發 · 留言區後端 API</h4>
+          <ul class="text-blush/80 text-sm mt-3 space-y-2">
+            <li><span class="tag-pill tag-new mr-2">新增</span>聯絡表單可直接發送到 Telegram Bot（配置後啟用，失敗自動降級為複製）</li>
+            <li><span class="tag-pill tag-new mr-2">新增</span>留言區可接入後端 API，支援跨裝置同步留言與點讚</li>
+            <li><span class="tag-pill tag-opt mr-2">優化</span>提交按鈕加入 spinner 與禁用狀態，防止重複提交</li>
+          </ul>
+        </div>
+
+        <!-- v1.35.0 -->
         <div class="timeline-item">
           <div class="flex flex-wrap items-center gap-2">
             <span class="version-tag">v1.35.0</span>
@@ -811,6 +846,8 @@
             <li><span class="tag-pill tag-new mr-2">新增</span>Open Graph / Twitter Card meta 標籤</li>
           </ul>
         </div>
+
+        <!-- v1.34.0 -->
         <div class="timeline-item">
           <div class="flex flex-wrap items-center gap-2">
             <span class="version-tag">v1.34.0</span>
@@ -824,6 +861,8 @@
             <li><span class="tag-pill tag-new mr-2">新增</span>「成功搶票留言區」每日按 HKT 自動生成留言</li>
           </ul>
         </div>
+
+        <!-- v1.33.0 -->
         <div class="timeline-item">
           <div class="flex flex-wrap items-center gap-2">
             <span class="version-tag">v1.33.0</span>
@@ -835,6 +874,8 @@
             <li><span class="tag-pill tag-new mr-2">新增</span>整合式「聯絡」浮動按鈕（Telegram / QQ / 釘釘）</li>
           </ul>
         </div>
+
+        <!-- v1.32.0 -->
         <div class="timeline-item">
           <div class="flex flex-wrap items-center gap-2">
             <span class="version-tag">v1.32.0</span>
@@ -1020,7 +1061,7 @@
     apiKey: '',
     timeout: 8000,
     cacheTTL: 24 * 60 * 60 * 1000,
-    cacheKey: 'tk_shows_cache_v9',   /* ← 已從 v8 升級為 v9，避免讀到舊版快取 */
+    cacheKey: 'tk_shows_cache_v10',   /* ← 已從 v9 升級為 v10，避免讀到舊版快取 */
     debug: false,                    /* ← 需要診斷時臨時改為 true */
     autoDetectEnv: false,
 
@@ -1354,7 +1395,7 @@
   var CORS_PROXY  = CFG.corsProxy  != null ? CFG.corsProxy  : '';
   var API_KEY     = CFG.apiKey     != null ? CFG.apiKey     : '';
   var TIMEOUT     = CFG.timeout    != null ? CFG.timeout    : 8000;
-  var CACHE_KEY   = CFG.cacheKey   != null ? CFG.cacheKey   : 'tk_shows_cache_v9';
+  var CACHE_KEY   = CFG.cacheKey   != null ? CFG.cacheKey   : 'tk_shows_cache_v10';
   var CACHE_TTL   = CFG.cacheTTL   != null ? CFG.cacheTTL   : 24 * 60 * 60 * 1000;
   var DEBUG       = !!CFG.debug;
 
@@ -1390,6 +1431,133 @@
   // ============ 兜底資料（根據最新售票資訊更新，只保留未開售場次）============
   var FALLBACK_SHOWS = [
     {
+      id: 'chow-yan-ting-2026',
+      name: '周殷廷 The Alchemist Live in Hong Kong 2026',
+      date: '2026年8月28日-29日 晚上8:15',
+      venue: '紅磡香港體育館（紅館）',
+      price: 'HK$980 / $680 / $480',
+      publicSaleDate: '2026-05-12',
+      publicSaleTime: '上午 10:00',
+      platform: 'URBTIX、Cityline',
+      ticketUrl: 'https://www.urbtix.hk/',
+      isMacau: false,
+      isHot: false,
+      prioritySales: [
+        { stage: '中銀Chill Card優先訂票', date: '2026-05-05', time: '上午 11:00 – 晚上 11:59' },
+        { stage: '中銀Mastercard優先訂票', date: '2026-05-06', time: '上午 11:00 – 5月7日 晚上 11:59' }
+      ],
+      icon: 'fa-music',
+      iconColor: 'purple'
+    },
+    {
+      id: 'alin-2026',
+      name: 'A-Lin 黃麗玲《歌跡 Journey》巡迴演唱會2026 香港站',
+      date: '2026年4月17日-19日 晚上8:00',
+      venue: '紅磡香港體育館',
+      price: 'HK$1,280 / $880 / $580',
+      publicSaleDate: '2026-03-06',
+      publicSaleTime: '上午 10:00',
+      platform: 'KKTIX、URBTIX、Trip.com、大麥',
+      ticketUrl: 'https://www.urbtix.hk/',
+      isMacau: false,
+      isHot: true,
+      prioritySales: [
+        { stage: '貓眼/攜程/大麥/KKTIX優先發售', date: '2026-03-05', time: '中午 12:00' }
+      ],
+      icon: 'fa-star',
+      iconColor: 'magenta'
+    },
+    {
+      id: 'chan-hiu-tung-2026',
+      name: '陳曉東《NEON Reflections 30 演唱會》',
+      date: '2026年6月19日 晚上8:15',
+      venue: '紅磡香港體育館',
+      price: 'HK$1,280 / $680 / $480',
+      publicSaleDate: '2026-04-15',
+      publicSaleTime: '上午 10:00',
+      platform: 'URBTIX、貓眼、大麥',
+      ticketUrl: 'https://www.urbtix.hk/',
+      isMacau: false,
+      isHot: false,
+      prioritySales: [
+        { stage: '栢圖娛樂 Patotix優先購票', date: '2026-03-15', time: '上午 10:00 起' }
+      ],
+      icon: 'fa-music',
+      iconColor: 'purple'
+    },
+    {
+      id: 'janice-vidal-2026',
+      name: '衛蘭《OUT OF FRAME》世界巡迴演唱會 香港站',
+      date: '2026年11月14日、15日、17日、18日 晚上8:15',
+      venue: '紅磡香港體育館（紅館）',
+      price: 'HK$1,180 / $880 / $580',
+      publicSaleDate: '2026-10-20',
+      publicSaleTime: '上午 10:00',
+      platform: 'URBTIX、Klook',
+      ticketUrl: 'https://www.urbtix.hk/',
+      isMacau: false,
+      isHot: true,
+      prioritySales: [
+        { stage: 'Klook優先購票', date: '2026-10-16', time: '下午 3:00 起' }
+      ],
+      icon: 'fa-star',
+      iconColor: 'purple'
+    },
+    {
+      id: 'gigi-leung-2026',
+      name: '梁詠琪《LOVE GiGi 愛自己》世界巡迴演唱會-香港站',
+      date: '2026年11月27日-29日 晚上8:15',
+      venue: '紅磡香港體育館（紅館）',
+      price: 'HK$1,180 / $780 / $480',
+      publicSaleDate: '2026-09-08',
+      publicSaleTime: '上午 10:00',
+      platform: 'URBTIX',
+      ticketUrl: 'https://www.urbtix.hk/',
+      isMacau: false,
+      isHot: true,
+      prioritySales: [
+        { stage: 'Cityline優先購票', date: '2026-09-01', time: '上午 10:00 起（已售罄）' }
+      ],
+      icon: 'fa-star',
+      iconColor: 'magenta'
+    },
+    {
+      id: 'mirror-2026',
+      name: 'MIRROR 12 AS 1 LIVE 2026',
+      date: '2026年12月11日-13日、15日-20日、23日-24日 晚上8:15',
+      venue: '亞洲國際博覽館 Arena',
+      price: 'HK$1,680 / $1,480 / $1,080 / $780',
+      publicSaleDate: '2026-10-08',
+      publicSaleTime: '上午 11:00',
+      platform: 'Klook',
+      ticketUrl: 'https://www.klook.com/',
+      isMacau: false,
+      isHot: true,
+      prioritySales: [
+        { stage: 'MIRO 會員優先購票（MIRO專場）', date: '2026-10-02', time: '上午 10:00 起' },
+        { stage: 'MIRO 會員優先購票（其他場次）', date: '2026-10-05', time: '上午 10:00 起' },
+        { stage: '恆生信用卡用戶優先訂票', date: '2026-10-06', time: '中午 12:00 – 10月7日' }
+      ],
+      icon: 'fa-star',
+      iconColor: 'magenta'
+    },
+    {
+      id: 'bol4-2026',
+      name: '臉紅的思春期 BOL4《2026–2027 BOL4 CONCERT TOUR 〖Red Square〗十週年巡迴演唱會》香港站',
+      date: '2026年12月5日（六）',
+      venue: '東蒲胡李名靜體育館',
+      price: '待公佈',
+      publicSaleDate: '2026-10-20',
+      publicSaleTime: '下午 1:00',
+      platform: 'OFFGRID、大麥',
+      ticketUrl: 'https://www.damai.cn/',
+      isMacau: false,
+      isHot: false,
+      prioritySales: [],
+      icon: 'fa-music',
+      iconColor: 'magenta'
+    },
+    {
       id: 'stray-kids-2026',
       name: 'Stray Kids World Tour <RUN IT> 香港站',
       date: '2026年12月5日（六）下午 5:00',
@@ -1411,152 +1579,22 @@
       iconColor: 'purple'
     },
     {
-      id: 'desire4-2026',
-      name: 'Desire 4《2026永恆開端 Desire 4演唱會香港站 ULTIMATE ENCORE》',
-      date: '2026年11月21日（六）下午 5:00',
-      venue: '亞洲國際博覽館 AsiaWorld-Arena',
-      price: 'HK$1,988 (VIP) / $1,788 / $1,488 / $1,188 / $688',
-      publicSaleDate: '2026-10-13',
-      publicSaleTime: '中午 12:00',
-      platform: 'HKTicketing、大麥、Trip.com、攜程',
-      ticketUrl: 'https://www.hkticketing.com/',
-      isMacau: false,
-      isHot: true,
-      prioritySales: [
-        { stage: '大麥優先購票', date: '2026-10-12', time: '下午 6:00 起' }
-      ],
-      icon: 'fa-music',
-      iconColor: 'magenta'
-    },
-    {
-      id: 'lesserafim-macau-2026',
-      name: 'LE SSERAFIM 2026 澳門演唱會',
-      date: '2026年11月（共2場）',
-      venue: '銀河綜藝館',
-      price: '待公佈',
-      publicSaleDate: '2026-09-03',
-      publicSaleTime: '中午 12:00',
-      platform: 'FANTOPIA、銀河票務、大麥',
-      ticketUrl: 'https://www.fantopia.io/',
-      isMacau: true,
-      isHot: true,
-      prioritySales: [
-        { stage: 'FANTOPIA優先購票', date: '2026-09-02', time: '中午 12:00 – 晚上 7:00' }
-      ],
-      icon: 'fa-trophy',
-      iconColor: 'green'
-    },
-    {
-      id: 'txt-macau-2026',
-      name: 'TXT 2026 澳門演唱會加場',
-      date: '2026年11月20日 – 22日（共3場）',
-      venue: '銀河綜藝館',
-      price: '待公佈',
-      publicSaleDate: '2026-09-23',
-      publicSaleTime: '待公佈',
-      platform: 'FANTOPIA、大麥、銀河票務',
-      ticketUrl: 'https://www.fantopia.io/',
-      isMacau: true,
-      isHot: true,
-      prioritySales: [],
-      icon: 'fa-music',
-      iconColor: 'purple'
-    },
-    {
-      id: 'dino-macau-2026',
-      name: 'SEVENTEEN DINO《2026 DINOxPICHEOLIN [吉BOARD SHOW] - MACAU》',
-      date: '2026年10月10日（六）',
-      venue: '新濠影滙綜藝館',
-      price: '待公佈',
-      publicSaleDate: '待公佈',
-      publicSaleTime: '待公佈',
-      platform: 'FANTOPIA、大麥、Studio City',
-      ticketUrl: 'https://www.fantopia.io/',
-      isMacau: true,
-      isHot: false,
-      prioritySales: [],
-      icon: 'fa-trophy',
-      iconColor: 'green'
-    },
-    {
-      id: 'luke-macau-2026',
-      name: '盧廣仲 HeartBreakFast 傷心早餐店演唱會 澳門站',
-      date: '2026年12月5日（六）',
-      venue: '澳門威尼斯人綜藝館',
-      price: 'MOP/HKD $599 起',
-      publicSaleDate: '2026-10-20',
-      publicSaleTime: '中午 12:00',
-      platform: '金光票務、大麥、Trip.com、攜程',
-      ticketUrl: 'https://www.macauticket.com/',
-      isMacau: true,
-      isHot: false,
-      prioritySales: [],
-      icon: 'fa-music',
-      iconColor: 'purple'
-    },
-    {
-      id: 'omegax-macau-2026',
-      name: '2026 OMEGA X ASIA TOUR [BEYOND] IN MACAU',
-      date: '2026年12月5日（六）晚上 7:00',
-      venue: '澳門銀河 G Box',
-      price: 'MOP/HKD $1,588 / $1,288 / $888',
-      publicSaleDate: '2026-09-14',
-      publicSaleTime: '中午 12:00',
-      platform: '銀河票務、大麥、Cityline',
-      ticketUrl: 'https://www.galaxyticketing.com/',
-      isMacau: true,
-      isHot: false,
-      prioritySales: [],
-      icon: 'fa-trophy',
-      iconColor: 'green'
-    },
-    {
-      id: 'du-2026-macau',
-      name: '杜德偉《Get Up》世界巡迴演唱會2.0 澳門站',
-      date: '2026年11月14日（六）晚上 8:00',
-      venue: '澳門倫敦人綜藝館',
-      price: 'MOP/HKD $1,580 / $1,280 / $980 / $680',
-      publicSaleDate: '2026-08-25',
-      publicSaleTime: '中午 12:00',
-      platform: 'URBTIX、金光票務、澳門售票網、大麥、貓眼',
-      ticketUrl: 'https://www.urbtix.hk/',
-      isMacau: true,
-      isHot: false,
-      prioritySales: [],
-      icon: 'fa-star',
-      iconColor: 'purple'
-    },
-    {
-      id: 'icyball-macau-2026',
-      name: 'icyball 冰球樂團《我很抱歉》澳門演唱會',
-      date: '2026年12月26日（六）晚上 7:30',
-      venue: '澳門倫敦人劇場',
-      price: '待公佈',
-      publicSaleDate: '2026-09-18',
-      publicSaleTime: '中午 12:00',
-      platform: '金光票務、澳門售票網、大麥、貓眼、uutix、攜程',
-      ticketUrl: 'https://www.macauticket.com/',
-      isMacau: true,
-      isHot: false,
-      prioritySales: [],
-      icon: 'fa-music',
-      iconColor: 'purple'
-    },
-    {
-      id: 'bol4-2026',
-      name: '臉紅的思春期 BOL4《2026–2027 BOL4 CONCERT TOUR 〖Red Square〗十週年巡迴演唱會》香港站',
-      date: '2026年12月5日（六）',
+      id: 'lucy-2026',
+      name: '2026 LUCY 9TH CONCERT 〈ISLAND〉 ENCORE IN HONG KONG',
+      date: '2026年11月3日（二）晚上7:00',
       venue: '東蒲胡李名靜體育館',
-      price: '待公佈',
-      publicSaleDate: '2026-10-20',
-      publicSaleTime: '待公佈',
-      platform: 'OFFGRID、大麥',
-      ticketUrl: 'https://www.damai.cn/',
+      price: 'HKD 1,399 (VIP) / 999 (企位) / 799 (坐位)',
+      publicSaleDate: '2026-08-14',
+      publicSaleTime: '中午 12:00',
+      platform: 'Cityline',
+      ticketUrl: 'https://www.cityline.com.hk/',
       isMacau: false,
       isHot: false,
-      prioritySales: [],
+      prioritySales: [
+        { stage: '滙豐Mastercard優先購票', date: '2026-08-13', time: '中午 12:00 起' }
+      ],
       icon: 'fa-music',
-      iconColor: 'magenta'
+      iconColor: 'purple'
     },
     {
       id: 'aaron-kwok-2026',
@@ -1579,6 +1617,126 @@
       iconColor: 'purple'
     },
     {
+      id: 'ziyu-macau-2026',
+      name: '梓渝「游點意思Pro」澳門站',
+      date: '2026年11月13日-15日（共3場）',
+      venue: '澳門銀河綜藝館',
+      price: 'MOP $2,388 / $2,028 / $1,568 / $1,198 / $828',
+      publicSaleDate: '2026-10-16',
+      publicSaleTime: '晚上 8:00',
+      platform: '大麥、大麥國際、FANTOPIA、銀河票務',
+      ticketUrl: 'https://www.fantopia.io/',
+      isMacau: true,
+      isHot: true,
+      prioritySales: [],
+      icon: 'fa-trophy',
+      iconColor: 'green'
+    },
+    {
+      id: 'idle-macau-2026',
+      name: 'i-dle World Tour《Syncopation》澳門站',
+      date: '2026年8月29日-30日（加場）',
+      venue: '銀河綜藝館',
+      price: 'MOP $1,999 / $1,599 / $1,299 / $999 / $699',
+      publicSaleDate: '2026-07-23',
+      publicSaleTime: '中午 12:00',
+      platform: '銀河票務、FANTOPIA、大麥',
+      ticketUrl: 'https://www.galaxyticketing.com/',
+      isMacau: true,
+      isHot: true,
+      prioritySales: [
+        { stage: 'Neverland Membership優先購票', date: '2026-07-22', time: '中午 12:00 – 晚上 7:00' }
+      ],
+      icon: 'fa-music',
+      iconColor: 'magenta'
+    },
+    {
+      id: 'txt-macau-2026',
+      name: 'TXT 2026 澳門演唱會',
+      date: '2026年11月20日-22日（共3場）',
+      venue: '銀河綜藝館',
+      price: '待公佈',
+      publicSaleDate: '2026-09-24',
+      publicSaleTime: '中午 12:00',
+      platform: 'FANTOPIA、大麥、銀河票務',
+      ticketUrl: 'https://www.fantopia.io/',
+      isMacau: true,
+      isHot: true,
+      prioritySales: [
+        { stage: 'MOA MEMBERSHIP 優先購票', date: '2026-09-21', time: '下午 2:00 – 晚上 7:00' }
+      ],
+      icon: 'fa-music',
+      iconColor: 'purple'
+    },
+    {
+      id: 'lesserafim-macau-2026',
+      name: 'LE SSERAFIM 2026 澳門演唱會',
+      date: '2026年11月7日-8日',
+      venue: '銀河綜藝館',
+      price: 'MOP 1,988 (VIP站區) / 1,988 / 1,688 / 1,288 / 988 / 688',
+      publicSaleDate: '2026-09-03',
+      publicSaleTime: '中午 12:00',
+      platform: 'FANTOPIA、銀河票務、大麥',
+      ticketUrl: 'https://www.fantopia.io/',
+      isMacau: true,
+      isHot: true,
+      prioritySales: [
+        { stage: 'FEARNOT MEMBERSHIP優先購票', date: '2026-09-02', time: '中午 12:00 – 晚上 7:00' }
+      ],
+      icon: 'fa-trophy',
+      iconColor: 'green'
+    },
+    {
+      id: 'chau-pak-ho-macau-2026',
+      name: '周柏豪生日限定演唱會2026 澳門站',
+      date: '2026年11月7日（六）晚上8:00',
+      venue: '威尼斯人綜藝館',
+      price: 'MOP/HKD $1,380 / $1,080 / $880 / $680 / $480',
+      publicSaleDate: '2026-10-15',
+      publicSaleTime: '中午 12:00',
+      platform: '金光票務、大麥、Klook、澳門售票網等',
+      ticketUrl: 'https://www.macauticket.com/',
+      isMacau: true,
+      isHot: false,
+      prioritySales: [],
+      icon: 'fa-star',
+      iconColor: 'purple'
+    },
+    {
+      id: 'weibird-macau-2026',
+      name: '韋禮安「如果可以，我想和你明天再見」巡迴演唱會 澳門站',
+      date: '2026年12月12日（六）晚上8:00',
+      venue: '倫敦人綜藝館',
+      price: 'MOP $1,388 / $1,088 / $888 / $588',
+      publicSaleDate: '2026-10-16',
+      publicSaleTime: '中午 12:00',
+      platform: '金光票務、澳門售票網、大麥、貓眼、uutix、攜程、MPAY',
+      ticketUrl: 'https://www.macauticket.com/',
+      isMacau: true,
+      isHot: false,
+      prioritySales: [],
+      icon: 'fa-music',
+      iconColor: 'purple'
+    },
+    {
+      id: 'yesung-macau-2026',
+      name: '藝聲 YESUNG 2026 澳門演唱會',
+      date: '2026年11月14日-15日',
+      venue: '澳門百老匯劇院',
+      price: 'MOP $1,699 (VIP) / $1,199 / $899',
+      publicSaleDate: '2026-09-29',
+      publicSaleTime: '中午 12:00',
+      platform: 'FANTOPIA、銀河票務、大麥',
+      ticketUrl: 'https://www.fantopia.io/',
+      isMacau: true,
+      isHot: false,
+      prioritySales: [
+        { stage: 'E.L.F.會員優先購票', date: '2026-09-28', time: '中午 12:00 – 晚上 7:00' }
+      ],
+      icon: 'fa-music',
+      iconColor: 'magenta'
+    },
+    {
       id: 'mc-cheung-macau-2026',
       name: 'MC張天賦《E=MC²》演唱會 2026 澳門站',
       date: '2026年11月27日 – 28日（共2場）晚上 8:00',
@@ -1595,60 +1753,6 @@
       ],
       icon: 'fa-music',
       iconColor: 'magenta'
-    },
-    {
-      id: 'mirror-2026',
-      name: 'MIRROR 12 AS 1 LIVE 2026',
-      date: '2026年12月11日 – 13日、15日 – 18日、20日（共8場）晚上 8:15',
-      venue: '亞洲國際博覽館 Arena',
-      price: 'HK$1,680 / $1,480 / $1,080 / $780',
-      publicSaleDate: '2026-10-08',
-      publicSaleTime: '上午 11:00',
-      platform: 'Klook',
-      ticketUrl: 'https://www.klook.com/',
-      isMacau: false,
-      isHot: true,
-      prioritySales: [
-        { stage: 'MIRO 會員優先購票（MIRO專場）', date: '2026-10-02', time: '上午 10:00 起' },
-        { stage: 'MIRO 會員優先購票（其他場次）', date: '2026-10-05', time: '上午 10:00 起' },
-        { stage: '恆生信用卡用戶優先訂票', date: '2026-10-06', time: '中午 12:00 – 10月7日' }
-      ],
-      icon: 'fa-star',
-      iconColor: 'magenta'
-    },
-    {
-      id: 'janice-vidal-2026',
-      name: '衛蘭《OUT OF FRAME》世界巡迴演唱會 香港站',
-      date: '2026年11月14日、15日、17日、18日（共4場）晚上 8:15',
-      venue: '紅磡香港體育館（紅館）',
-      price: 'HK$1,180 / $880 / $580',
-      publicSaleDate: '2026-10-08',
-      publicSaleTime: '上午 10:00',
-      platform: 'URBTIX、Klook',
-      ticketUrl: 'https://www.urbtix.hk/',
-      isMacau: false,
-      isHot: true,
-      prioritySales: [
-        { stage: 'Klook 優先購票', date: '2026-10-16', time: '下午 3:00 起' }
-      ],
-      icon: 'fa-star',
-      iconColor: 'purple'
-    },
-    {
-      id: 'supper-moment-macau-2026',
-      name: 'SUPPER MOMENT「謝謝你啊世界」澳門限定版',
-      date: '2026年11月21日（六）晚上 8:00',
-      venue: '澳門威尼斯人綜藝館',
-      price: 'MOP/HKD 待公佈',
-      publicSaleDate: '2026-09-29',
-      publicSaleTime: '下午 3:00',
-      platform: '澳門售票網、Klook、金光票務、大麥、貓眼',
-      ticketUrl: 'https://www.macauticket.com/',
-      isMacau: true,
-      isHot: false,
-      prioritySales: [],
-      icon: 'fa-music',
-      iconColor: 'purple'
     }
   ];
 
